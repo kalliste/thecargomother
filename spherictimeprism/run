@@ -1,0 +1,6 @@
+cd /home/spheric
+#~/background &
+while true; do 
+  pkill mplayer
+  gnome-terminal -e 'python player.py'
+done
