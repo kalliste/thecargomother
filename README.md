@@ -16,7 +16,11 @@ For DMX lighting control we'll use [OLA](http://code.google.com/p/open-lighting/
 
 Hardware
 --------------
-The [Hackberry A10](https://www.miniand.com/products/Hackberry%20A10%20Developer%20Board) is $65, has a fast cpu, and composite video output.
+[This table](http://techwatch.keeward.com/geeks-and-nerds/arduino-vs-raspberry-pi-vs-cubieboard-vs-gooseberry-vs-apc-rock-vs-olinuxino-vs-hackberry-a10/) covers info on our options
 
+The microntroller for Spheric Time Prism was the [Arduino Mega 2560](http://arduino.cc/en/Main/arduinoBoardMega2560) and that is a good choice here
+
+The [Hackberry A10](https://www.miniand.com/products/Hackberry%20A10%20Developer%20Board) is $65, has a fast cpu, and composite video output.
 Some hacking may be required to use the gpu acceleration available with the [open source driver](http://limadriver.org/Hardware/#Allwinner+A10)
 
+Veejay only works with I-frames so hardware video decoding is useless for us
