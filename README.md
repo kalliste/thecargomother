@@ -29,4 +29,5 @@ Veejay only works with I-frames so hardware video decoding is useless for us
 Files
 --------------
 enc.sh - encode videos for use with veejay
+
 test-veejay-play.py - initial test of sending commands to veejay
