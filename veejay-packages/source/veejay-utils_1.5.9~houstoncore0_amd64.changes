@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 09 Jul 2013 14:16:16 +0200
+Source: veejay-utils
+Binary: veejay-utils
+Architecture: source amd64
+Version: 1.5.9~houstoncore0
+Distribution: precise
+Urgency: low
+Maintainer: Gijs Molenaar <matthijs@veejayhq.net>
+Changed-By: Joshua Jackson <jjackson@kallisteconsulting.com>
+Description: 
+ veejay-utils - veejay utilities
+Changes: 
+ veejay-utils (1.5.9~houstoncore0) precise; urgency=low
+ .
+   * build new version
+Checksums-Sha1: 
+ 6fbc45b499b36492f8ebe4201376e63e1bb53624 1512 veejay-utils_1.5.9~houstoncore0.dsc
+ cb18ba1c45c1e33c5f068686161c6c1866eb5c81 348980 veejay-utils_1.5.9~houstoncore0.tar.gz
+ f75b94a088759cb462c85a51e46f1c01c17719de 8142 veejay-utils_1.5.9~houstoncore0_amd64.deb
+Checksums-Sha256: 
+ fc732808724b8e1630f4387392fd8f5d848ed88e8a868570e0df0fa69fba7902 1512 veejay-utils_1.5.9~houstoncore0.dsc
+ 254961f452731c81306cefc9087b34ebb051c2d237490d5a5ded95892de5776e 348980 veejay-utils_1.5.9~houstoncore0.tar.gz
+ 0d33839c2ad57b82626f13b2cef7d9fb909707bf13e96b40b6fae0633394424c 8142 veejay-utils_1.5.9~houstoncore0_amd64.deb
+Files: 
+ 2c504a330be8d8dcdfb2fdf78f04c8d6 1512 graphics extra veejay-utils_1.5.9~houstoncore0.dsc
+ 86476b3ce0082b12b7b8f74f14d3b364 348980 graphics extra veejay-utils_1.5.9~houstoncore0.tar.gz
+ 20c2db560a6a569f191d7d11fbade027 8142 graphics extra veejay-utils_1.5.9~houstoncore0_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQIcBAEBAgAGBQJR3IMpAAoJEGopmUsiXp1CFJgP/1VSsUBWKBWE7YKxkc/2eOBK
+wM5aU6pmaiuSxUUqWAxMZI0Kev0XAd5TeotLQhj3SakZ66UsC4Nf6gJt0Ihvyb3s
+n+oiQMk8Uh0TFSrkdeJj8rSBQdGpiIVO8tl4ZRXLbkt6bzruDQBlF8u1N6HTpW0R
++5g+JpGDyWX8No+JRKTgKdjZQ07ZFpHTQFY5ZVCke5O+4WORdcAuHjpFmL/zyGb4
+tYuz+gh6TOOjWtroaijHicPGTJ+y3P9NGUoocVK+CHry2YIQZOnUWawKgGS3dPP5
+YJWiTfjewvA5J1xcYNFlaR4QDGG5mGLX/VbSA8DLY4fZsK7cy8M8jUZIm7nIi3GW
+CGgZYk+rpo3ZCr7E6tNTGrN9GNzrSQ9J1Yz2eFF79FOPz3Jf2+wF8kPLNX9MskYR
+MtOUodwtX8cAvnWTYW/5aDaapFCmwQfxFgW+Wk/ASFfICz0iH4Rds6k3gV9e+2xj
+sVTSLqJ3Ffy1FnYDFSElu1aTLMjP7WJnuHTFdpwxOLFsAaLArT7ySCOkZ6djdLte
+X8/6aZnXvnxt9qZn1Nwp4AVA4VNhB/dcJNe2Om+kkdS9z2b3JpGNETZdwkcJm7I0
+F9Tyy1qY/pYOKupRQgKR+yupzIMneOF47sjrG8eI3BrqIXdTPxT4fXxJaqnoE+iQ
+7NZ0bzdFPmZPWj1XfaDt
+=Hjom
+-----END PGP SIGNATURE-----

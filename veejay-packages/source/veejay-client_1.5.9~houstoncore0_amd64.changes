@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 09 Jul 2013 09:56:48 +0200
+Source: veejay-client
+Binary: veejay-client
+Architecture: source amd64
+Version: 1.5.9~houstoncore0
+Distribution: precise
+Urgency: low
+Maintainer: Gijs Molenaar <sitemaster@veejayhq.net>
+Changed-By: Joshua Jackson <jjackson@kallisteconsulting.com>
+Description: 
+ veejay-client - visual instrument and realtime video sampler, the client
+Changes: 
+ veejay-client (1.5.9~houstoncore0) precise; urgency=low
+ .
+   * Build latest source for precise
+Checksums-Sha1: 
+ 4b20dbd005c56c5bd144e2a8bee23e4429e59f17 1628 veejay-client_1.5.9~houstoncore0.dsc
+ ba1188167067e1fa11c95fae695cd02a65e567b1 754820 veejay-client_1.5.9~houstoncore0.tar.gz
+ 23e33961adace6bcd3dd147a16be81addea0f8d6 389372 veejay-client_1.5.9~houstoncore0_amd64.deb
+Checksums-Sha256: 
+ 2a6525a7d013cec031e164f4eb4ac6da12cb0f2ddaa05cc3554aeb78d044b66b 1628 veejay-client_1.5.9~houstoncore0.dsc
+ fcb8a3896ecd239dbf8235546f2f10259025405fbb3c0a4578cca5cd15e4a855 754820 veejay-client_1.5.9~houstoncore0.tar.gz
+ 1292c012873c918c6c3457dd97d32dbbd84b9633b0856b92199f7fff5635076e 389372 veejay-client_1.5.9~houstoncore0_amd64.deb
+Files: 
+ b15c8097dac1cc1b316d3d3058d53a97 1628 graphics extra veejay-client_1.5.9~houstoncore0.dsc
+ ecb819dd157f9804f4b8430e6e9e7f27 754820 graphics extra veejay-client_1.5.9~houstoncore0.tar.gz
+ ac71c2edf1a9b13a79d3cd633fb1b8cf 389372 graphics extra veejay-client_1.5.9~houstoncore0_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQIcBAEBAgAGBQJR3GozAAoJEGopmUsiXp1CPPgP/3X6lU6xBpRxZhv2lO4fLR3m
+ciSjZ8iReg+ZxvwUj8A0ggBbNYCDFp8XlazJPwmUDgo3AR7cGqvVpJwjtOPYkXI7
+PIsK4rLRnbz+SMwn0EurI4tcO6XKPGu1WepTbe6gJMa3cYi3w6mNg3iTrj53FS6R
+NZ5ABpBneZi3+m1x65kxmT24qpkytn+d4x7qxfbt2YYtfEJ4NEQUQdx291jkFenF
+nRLn9WPABxvxW9szvVmU+juxliMMnAzKsdZEx4x5d9SfWKeb8zvPMQqkaGslGbeC
+P9LCxPPXgae+o6liLTDll8kOrHPvNOoUP7K2aYFHl9AVwfmCSS/3UlPeVD1UCRVd
+c/pBZO1FfAsESQrSGHaZ/bSvRKSrrXN7KR4uUf6yxXPblLSxTobZOGATK6s3MTjp
+vyVSgZj5bzZB5sQAQS22siMZAx4hs1wRfdGB/v73R4xwpYN5EBRXyc+1UwkXel/L
+hX62mD/VGleZb7V8+jh4qqoCkouE2EPLTjYS0vQFCu7Imhu4QYW1OcYVbW1ddf0N
+dwDKSFsw4A7Gua8bGhh3EyjB0iyoi/ol0y3lDlOLEdQRBnzUA4j/W28WsLQJazNQ
+XG8RMvHflt4wjlzdYIZQmISKPBJw1Yx6aKwqpqgJKG+Y5PX6//9aWvdyL5X3gRPL
+KuRAVhxDz3k7ryfV9ZYn
+=2HDg
+-----END PGP SIGNATURE-----

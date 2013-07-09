@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 09 Jul 2013 07:03:55 +0200
+Source: veejay-server
+Binary: veejay-server
+Architecture: source amd64
+Version: 1.5.9~houstoncore0
+Distribution: precise
+Urgency: low
+Maintainer: Gijs Molenaar <sitemaster@veejayhq.net>
+Changed-By: Joshua Jackson <jjackson@kallisteconsulting.com>
+Description: 
+ veejay-server - visual instrument and realtime video sampler, the server
+Changes: 
+ veejay-server (1.5.9~houstoncore0) precise; urgency=low
+ .
+   * bumped version number so packge gets reaccepted in launchpad
+Checksums-Sha1: 
+ 5642f047b88fac050fc2ad80adaa4cb25d154ac4 1741 veejay-server_1.5.9~houstoncore0.dsc
+ a0345ef0126731ffc7dbc31d2d020efd78e91439 1461148 veejay-server_1.5.9~houstoncore0.tar.gz
+ ce7d854ca153e881d90babf03a75bd5d74b3ba7f 1364526 veejay-server_1.5.9~houstoncore0_amd64.deb
+Checksums-Sha256: 
+ bda6834ee31c1051099587e85f9e13e1e741443a32504338099c69beb20ecd8c 1741 veejay-server_1.5.9~houstoncore0.dsc
+ 0eef8440c1797a07d8059434abd1c8669439fce39b9a75c8a2f64e446b3e9435 1461148 veejay-server_1.5.9~houstoncore0.tar.gz
+ 01e204fce58c5cf44e88ccf6082fbe38782c0527097bbd12a92aa45fd7a82aec 1364526 veejay-server_1.5.9~houstoncore0_amd64.deb
+Files: 
+ 67f1cbe4a6dd637da39ac71252567c89 1741 graphics extra veejay-server_1.5.9~houstoncore0.dsc
+ 6f04defb259d3e6aad6fcec1a5549e47 1461148 graphics extra veejay-server_1.5.9~houstoncore0.tar.gz
+ 7dc5ce5ab5475a10fbbe9cfb4962ae32 1364526 graphics extra veejay-server_1.5.9~houstoncore0_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQIcBAEBAgAGBQJR3GeGAAoJEGopmUsiXp1CfpEP/ij/+Ynocka/SEPPunoMo9KJ
+XhbqGRg3FxVwRFplnZ0szjMNeq38zYu0tpT9QTxOs/K0DYFo0qQ6vR+EqHxt4zcZ
+D7OjkyEjaxCUlk3RgLYnLOY5I1i0ivFI9VMVpcHkC71hoS6lLmi7NhZJX80XTJTE
+ETNha0g9bqC7MZh+KtK4kfIYjr0WjGHwA7UCMuaXS/dazFJtxcCaJXNNGZX8KwJa
+vcfS6lJ5HQp1uBAysAgD9c3dPVbTCOINoXaHyj07VBfflztUz8W3jxyhXbJVebw9
+nJm5GXmHKh7QAfTkbuvRUOyag2a5Xx4YyvFo8mE9Sq1PAEi+yYDV9zmK4Nve90Ii
+oVQ3e1ZSew5d3TIobYFZXnX7pcOctie5+9yHIiR7s8r2+hgGIsY07bCee+U6zsOV
+ERDts5tha505m8Gag1cEfnKexwy/ZcZVIDhIu4trFqvETiTi3KZZ9BH8V1oGBeMg
+ujX+Mg7NdeAPWvtAqjaZdrk6pPqBOsWrfsZextze7ZElw6jXqHj9ErjF6oyiWoBD
+nXTv8mRC3iLsU0/reiocQ7NlIYU4TfdpAx1KTwYJwUCdPH3wzW/wBZ9H3R/ccRK/
+pxms87GI9759n9Xq/JxxuHNKLu7nGd74YQlo4zwiKmFubiDyYuZbevu9oHyQvOQX
+OzX7q/lqO0VWsT9OFavK
+=wGkZ
+-----END PGP SIGNATURE-----
