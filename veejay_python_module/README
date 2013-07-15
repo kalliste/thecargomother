@@ -1,0 +1,4 @@
+import veejay as vj
+vj.launch_server('initial-video.mov')
+vj.conn_open()
+vj.command("012:;") # VIMS pause command

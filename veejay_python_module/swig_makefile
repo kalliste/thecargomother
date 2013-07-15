@@ -1,0 +1,8 @@
+_veejay.so: veejay.py veejay.c
+	python setup.py build_ext --inplace
+
+veejay.py: veejay.i veejay.h
+	swig -python veejay.i
+
+clean:
+	rm -rf build veejay_wrap.c veejay.py veejay.pyc _veejay.so
