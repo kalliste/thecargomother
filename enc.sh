@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 usage() {
-  echo "Usage: $0 filename"
+  echo "Usage: $0 input_file output_file"
   exit 1
 }
  
@@ -11,16 +11,11 @@ is_file_exits() {
 }
 
 [[ $# -eq 0 ]] && usage
+[[ $# -eq 1 ]] && usage
  
 if ( is_file_exits "$1" )
 then
-  ff=$1
-  filename=$(basename $ff)
-  extension=${filename##*.}
-  filename=${filename%.*}
-  
-  mkdir -p converted
-  ffmpeg -i "${ff}"  -vf "scale=512:384" -r 24 -an -pix_fmt yuvj420p -vcodec mjpeg -f mov -y converted/"${filename}"-vj.mov
+  ffmpeg -i "$1"  -vf "scale=512:384" -r 24 -acodec pcm_s16le -pix_fmt yuvj420p -vcodec mjpeg -f mov -y "$2"
 else
  echo "File not found"
 fi
