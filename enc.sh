@@ -15,7 +15,7 @@ is_file_exits() {
  
 if ( is_file_exits "$1" )
 then
-  ffmpeg -i "$1"  -vf "scale=512:384" -r 24 -acodec pcm_s16le -pix_fmt yuvj420p -vcodec mjpeg -y "$2"
+  ffmpeg -i "$1"  -vf "scale=512:384" -r 24 -acodec pcm_u8 -pix_fmt yuvj420p -vcodec mjpeg -y "$2"
 else
  echo "File not found"
 fi
