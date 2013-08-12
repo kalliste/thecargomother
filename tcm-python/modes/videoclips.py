@@ -3,7 +3,7 @@ from mplayer import Player
 def init(util):
   global vplayer
   global videos
-  vplayer = Player()
+  vplayer = Player(('-fs'))
   videos = util.media.load_video_list("ftp")
 
 def event(num):
