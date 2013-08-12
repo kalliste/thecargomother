@@ -19,3 +19,12 @@ def load_sound_list(which):
     if (file[-4:] == '.wav' or file[-4:] == '.ogg'):
       ret.append(file)
   return ret
+
+def load_video_list(which):
+  global basedir
+  path = basedir + "/" + which
+  ret = list()
+  for file in listdir_fullpath(path): 
+    if (file[-4:] == '.mp4' or file[-4:] == '.avi'):
+      ret.append(file)
+  return ret

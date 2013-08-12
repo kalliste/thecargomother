@@ -20,6 +20,7 @@ util.media.set_basedir(os.path.expanduser("~/videos-core"))
 
 modes = find_modes()
 mode = load_mode(modes[1])
+mode = load_mode("videoclips")
 mode.init(util)
 
 driver.init()
