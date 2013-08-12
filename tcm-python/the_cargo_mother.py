@@ -27,5 +27,12 @@ driver.init()
 print "Ready"
 while True:
   event = driver.get_event()
-  if (event >= 0):
+  if (type(event) == int):
     mode.event(event)
+  elif (event == '\x1b' or event == '\x03'):
+    exit()
+  else:
+    if (len(event) == 1):
+      print "'\\x" + event.encode('hex') + "'"
+    else:
+      print event
