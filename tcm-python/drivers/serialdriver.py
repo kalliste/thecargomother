@@ -5,11 +5,11 @@ import serial
 
 def init():
   global ser
-  global old_vals
   global vals
+  global old_vals
   global q
   q = Queue.Queue()
-  old_vals = vals = ['0'] * 52
+  old_vals = vals = ['0'] * 54
   device = ''
   for a_device in os.listdir("/dev"):
     if (re.match('tty.usbmodem', a_device) or re.match('ttyACM', a_device)):
@@ -19,12 +19,16 @@ def init():
 
 def get_event():
   global ser
+  global vals
+  global old_vals
+  global q
   while (q.qsize() == 0):
     x = ser.readline()
     vals = x.strip().split(',')
     for i in range(0, len(vals)):
       if (int(vals[i]) == 1 and int(old_vals[i]) == 0):
         q.put(i)
+    old_vals = vals
   if (q.qsize() != 0):
     ret = q.get()
     return ret
