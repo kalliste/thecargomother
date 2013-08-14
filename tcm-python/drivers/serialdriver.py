@@ -1,6 +1,7 @@
 import Queue
 import re
 import os
+import serial
 
 def init():
   global ser
@@ -18,11 +19,12 @@ def init():
 
 def get_event():
   global ser
-  if (q.qsize() == 0):
+  while (q.qsize() == 0):
     x = ser.readline()
     vals = x.strip().split(',')
     for i in range(0, len(vals)):
       if (int(vals[i]) == 1 and int(old_vals[i]) == 0):
         q.put(i)
   if (q.qsize() != 0):
-    return q.get()
+    ret = q.get()
+    return ret
