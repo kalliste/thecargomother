@@ -1,0 +1,15 @@
+--- SHOW STOPPER ---------------------
+* Get Hackberry fully functioning
+* modes can call a util function that queues a mode switch as the next main loop event
+---- NORMAL --------------------------
+* util functions to track system state such as how long we are idle
+* ffmpeg burst big file to small clips
+* roll on weighted table to pick new mode for idle
+* load text from files
+* write a veejay based mode with simple playback controls
+* OLA lighting effects
+* Special mode for "My Prophet is a word not known" 
+---- WISH LIST -----------------------
+* veejay with sound
+* Wiimote events
+* broadcast messages
