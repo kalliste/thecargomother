@@ -1,5 +1,6 @@
 
 import os
+import random
 
 type = 'text'
 
@@ -41,3 +42,6 @@ def event(num):
   cmd = 'espeak "' + phrase + '" --stdout | aplay -q &'
   print cmd
   os.system(cmd)
+
+def tick():
+  event(random.randint(0,50))
