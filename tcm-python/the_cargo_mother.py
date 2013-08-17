@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-#import drivers.kbdriver as driver
-import drivers.serialdriver as driver
+import drivers.kbdriver as driver
+#import drivers.serialdriver as driver
 
 import os, threading, time, random
 import util.media
@@ -52,9 +52,10 @@ def handle_periodic_events():
 util.media.set_basedir(os.path.expanduser("~/videos-core"))
 
 modes = find_modes()
-mode = load_mode(modes[1])
 print "load and init mode"
-mode = load_mode("soundeffects")
+#mode = load_mode(modes[1])
+mode = load_mode("espeak")
+#mode = load_mode("soundeffects")
 mode.init(util)
 
 driver.init()
