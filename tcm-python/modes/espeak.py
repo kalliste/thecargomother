@@ -1,11 +1,10 @@
 
-import os
-import random
-
+import os, random
+import util.media
 
 def init(_util):
   global phrases
-  phrases = util.media.load_text_set("set1"):
+  phrases = util.media.load_text_set("set1")
 
 def event(num):
   global phrases

@@ -29,9 +29,9 @@ def load_video_list(which):
       ret.append(file)
   return ret
 
-def load_text_set(which)
+def load_text_set(which):
   global basedir
-  fp = open(basedir + '/' + which + '.txt')
+  fp = open(basedir + '/text/' + which + '.txt')
   lines = fp.readlines()
   fp.close()
   for (i, item) in enumerate(lines):
