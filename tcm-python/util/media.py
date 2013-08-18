@@ -1,5 +1,5 @@
 
-import os
+import os, string
 
 basedir = ''
 
@@ -28,3 +28,12 @@ def load_video_list(which):
     if (file[-4:] == '.mp4' or file[-4:] == '.avi'):
       ret.append(file)
   return ret
+
+def load_text_set(which)
+  global basedir
+  fp = open(basedir + '/' + which + '.txt')
+  lines = fp.readlines()
+  fp.close()
+  for (i, item) in enumerate(lines):
+    lines[i] = string.strip(lines[i])
+  return lines
