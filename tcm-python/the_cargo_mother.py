@@ -6,6 +6,7 @@ import drivers.kbdriver as driver
 import util.media
 
 from util.main import *
+from util.modes import *
 
 def last_event_now():
   global last_event
@@ -27,10 +28,10 @@ def handle_periodic_events():
 
 util.media.set_basedir(os.path.expanduser("~/videos-core"))
 
-modes = find_modes()
+#modes = find_modes()
 print "load and init mode"
 #mode = load_mode(modes[1])
-mode = load_mode("espeak")
+mode = go_mode_now("espeak")
 #mode = load_mode("soundeffects")
 mode.init(util)
 
