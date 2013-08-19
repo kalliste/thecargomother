@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 09 Jul 2013 09:56:48 +0200
+Source: veejay-client
+Binary: veejay-client
+Architecture: source armhf
+Version: 1.5.9~houstoncore0
+Distribution: precise
+Urgency: low
+Maintainer: Gijs Molenaar <sitemaster@veejayhq.net>
+Changed-By: Joshua Jackson <jjackson@kallisteconsulting.com>
+Description: 
+ veejay-client - visual instrument and realtime video sampler, the client
+Changes: 
+ veejay-client (1.5.9~houstoncore0) precise; urgency=low
+ .
+   * Build latest source for precise
+Checksums-Sha1: 
+ 9c577f3151cb22934fba54440771a11eb7d2411c 744 veejay-client_1.5.9~houstoncore0.dsc
+ 953527e416675ed26c252169f2e38c4322df0d0f 754910 veejay-client_1.5.9~houstoncore0.tar.gz
+ 96f9dd3934f61bc9100974c4000ed6cfb0388ddd 365734 veejay-client_1.5.9~houstoncore0_armhf.deb
+Checksums-Sha256: 
+ 83d8a43c6c827a4ab82f84dcf409c36a8cff6bd7541c172f20ce3bb7b1c2eeaa 744 veejay-client_1.5.9~houstoncore0.dsc
+ 1252cb1ae549bf77ae84e3b1df6336fb82c56459075f8440f7bd6d11cdbe81d1 754910 veejay-client_1.5.9~houstoncore0.tar.gz
+ 754e4b6f0fc92b7f8751f3d849c218dd75341af9492033b265872fbb7f33fcbe 365734 veejay-client_1.5.9~houstoncore0_armhf.deb
+Files: 
+ 7113554457bd0c5db3298472cfc07e30 744 graphics extra veejay-client_1.5.9~houstoncore0.dsc
+ 28ee682d83a99993fdf6a9b318f8ea7e 754910 graphics extra veejay-client_1.5.9~houstoncore0.tar.gz
+ 8a7d52f7beecba9c8e8c1aa66ac48289 365734 graphics extra veejay-client_1.5.9~houstoncore0_armhf.deb

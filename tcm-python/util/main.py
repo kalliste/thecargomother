@@ -28,8 +28,6 @@ def setInterval(interval):
         return wrapper
     return decorator
 
-def now():
-  return time.mktime(time.gmtime()) 
 
 def has_method(obj, method):
   try:

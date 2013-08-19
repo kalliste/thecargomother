@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 09 Jul 2013 07:03:55 +0200
+Source: veejay-server
+Binary: veejay-server
+Architecture: source armhf
+Version: 1.5.9~houstoncore1
+Distribution: wheezy
+Urgency: low
+Maintainer: Gijs Molenaar <sitemaster@veejayhq.net>
+Changed-By: Joshua Jackson <jjackson@kallisteconsulting.com>
+Description: 
+ veejay-server - visual instrument and realtime video sampler, the server
+Changes: 
+ veejay-server (1.5.9~houstoncore1) wheezy; urgency=low
+ .
+   * bumped version number
+Checksums-Sha1: 
+ 0603d298143d57de0086d30fda80b564462f99fc 845 veejay-server_1.5.9~houstoncore1.dsc
+ dad8c1421f30494d8dadd0142e1241319cc322b4 1462180 veejay-server_1.5.9~houstoncore1.tar.gz
+ 2e39ab0dd1463d69d80e789da20b7e2aacbe3860 1224918 veejay-server_1.5.9~houstoncore1_armhf.deb
+Checksums-Sha256: 
+ aec8acb8c035574d6c81d26de7bb18daa64b8a83996e400a00c0a37c940e1a05 845 veejay-server_1.5.9~houstoncore1.dsc
+ 47ff2d3b1f262aaff6867c08c5b331739340b3423dff3aaff6ba1b9d8f742358 1462180 veejay-server_1.5.9~houstoncore1.tar.gz
+ 25da6b577fb3c4300cb4171c88566ff9151c4fe05b94ca0480a8d5428b170491 1224918 veejay-server_1.5.9~houstoncore1_armhf.deb
+Files: 
+ fbf328242428c6e6994fb077ffbc83b8 845 graphics extra veejay-server_1.5.9~houstoncore1.dsc
+ d104a9b123e9b2aa3167a6c584887e10 1462180 graphics extra veejay-server_1.5.9~houstoncore1.tar.gz
+ 84de4b0a71d8d581bdf0ee7ad554fadc 1224918 graphics extra veejay-server_1.5.9~houstoncore1_armhf.deb

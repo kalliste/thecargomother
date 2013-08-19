@@ -1,14 +1,15 @@
 #!/usr/bin/python
 
 import pygame
+from util.media import *
 
-clips = list()
-
-def init(util):
+def init():
   global clips
   pygame.mixer.init()
-  for file in util.media.load_sound_list("cartoon"):
+  clips = list()
+  for file in load_sound_list("cartoon"):
     clips.append(pygame.mixer.Sound(file))
 
 def event(num):
+  global clips
   clips[num % len(clips)].play()
