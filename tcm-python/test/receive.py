@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import select, socket 
 
 port = 50000 # where do you expect to get a msg?
