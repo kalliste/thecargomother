@@ -1,3 +1,3 @@
-void conn_open();
+int conn_open();
 void command(char *cmd);
 void end_flush();

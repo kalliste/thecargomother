@@ -67,7 +67,7 @@ void vj_flush(int frames) {
   }
 }
 
-void conn_open() {
+int conn_open() {
   veejay_set_debug_level(0);
   //printf("mem init\n");
   vj_mem_init();
@@ -81,7 +81,9 @@ void conn_open() {
   //printf("client connect\n");
   if (!vj_client_connect(my_client, "localhost", NULL, 3490)) {
     fprintf(stderr, "Unable to connect to %s:%d\n", "localhost", 3490);
+    return 1;
   }
+  return 0;
 }
 
 void command(char *cmd) {
