@@ -23,7 +23,7 @@ def handle_periodic_events():
 
 set_basedir(os.path.expanduser("~/videos-core"))
 print "load and init mode"
-mode = go_mode_now("prophet")
+mode = go_mode_now("peoplesounds")
 mode.init()
 driver.init()
 last_event_now()
