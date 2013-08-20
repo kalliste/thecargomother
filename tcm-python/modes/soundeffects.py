@@ -1,15 +1,14 @@
 #!/usr/bin/python
 
-import pygame
+import os, random
 from util.media import *
 
 def init():
   global clips
-  pygame.mixer.init()
-  clips = list()
-  for file in load_sound_list("cartoon"):
-    clips.append(pygame.mixer.Sound(file))
+  clips = load_sound_list("cartoon")
 
 def event(num):
   global clips
-  clips[num % len(clips)].play()
+  clip = clips[num % len(clips)]
+  cmd = 'aplay ' + clip + ' -D plug:dmix -q &'
+  os.system(cmd)

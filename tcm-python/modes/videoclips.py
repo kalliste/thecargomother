@@ -5,7 +5,7 @@ from util.media import *
 def init():
   global vplayer
   global videos
-  vplayer = Player(('-fs'))
+  vplayer = Player(('-fs -fixed-vo'))
   videos = load_video_list("ftp")
 
 def event(num):
@@ -14,6 +14,7 @@ def event(num):
   vplayer.stop()
   vid = videos[num % len(videos)]
   vplayer.fullscreen = True
+  print vid
   vplayer.loadfile(vid)
 
 def tick():

@@ -9,7 +9,7 @@ def init():
 def event(num):
   global phrases
   phrase = phrases[num % len(phrases)]
-  cmd = 'espeak "' + phrase + '" --stdout | aplay -q &'
+  cmd = 'espeak "' + phrase + '" --stdout | aplay -D plug:dmix -q &'
   #print cmd
   os.system(cmd)
 
