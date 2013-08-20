@@ -3,18 +3,17 @@
 import Queue, threading, sys, time, select
 from socket import *
 
-bufferSize = 1024 # whatever you need
 MYPORT = 50000
 
 s = socket(AF_INET, SOCK_DGRAM)
-s.bind(('<broadcast>', MYPORT))
+s.bind(('0.0.0.0', MYPORT))
 s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
 s.setblocking(0)
 
 def watch_socket(q):
   while True:
     result = select.select([s],[],[])
-    msg = result[0][0].recv(bufferSize) 
+    msg = result[0][0].recv(1024) 
     print msg
 
 
