@@ -8,6 +8,7 @@ MYPORT = 50000
 s = socket(AF_INET, SOCK_DGRAM)
 s.bind(('0.0.0.0', MYPORT))
 s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
+#s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.setblocking(0)
 
 def watch_socket(q):
