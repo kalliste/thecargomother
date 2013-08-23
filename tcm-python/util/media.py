@@ -25,7 +25,7 @@ def load_video_list(which):
   path = basedir + "/" + which
   ret = list()
   for file in listdir_fullpath(path): 
-    if (file[-4:] == '.mp4' or file[-4:] == '.avi'):
+    if (file[-4:] == '.mp4' or file[-4:] == '.avi' or file[-4:] == '.flv'):
       ret.append(file)
   return ret
 
