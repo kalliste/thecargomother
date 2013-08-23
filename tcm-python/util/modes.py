@@ -1,6 +1,17 @@
 import os, random
+from util.main import *
+
+mode = None
 
 def find_modes():
+  static_list = [
+    "espeak",
+    "joeyvids",
+    "peoplesounds",
+    "soundeffects",
+    "videoclips"
+  ]
+  return static_list
   ret = list()
   for file in sorted(os.listdir('modes')):
     if (file[-3:] == '.py' and file != '__init__.py'):
@@ -17,15 +28,20 @@ def go_mode_now(name):
   global selected_mode
   selected_mode = name
   do_mode_change = False
+  if (has_method(mode, "deinit")):
+    mode.deinit()
   mode = load_mode(name)
+  mode.init()
   return mode
 
 def mode_change_if_queued():
   global do_mode_change
   global selected_mode 
   global mode
+  print "mode change if needed"
   if (do_mode_change):
-    go_mode_now(selected_mode)
+    print "confirmed - do mode change"
+    mode = go_mode_now(selected_mode)
   return mode
 
 def go_next_mode():
@@ -49,3 +65,5 @@ def go_random_mode():
   modes = find_modes()
   selected_mode = modes[random.randint(0, len(modes)-1)]
   do_mode_change = True
+  print "selected mode: " + selected_mode
+

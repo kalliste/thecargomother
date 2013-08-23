@@ -1,6 +1,7 @@
 import random
 from mplayer import Player
 from util.media import *
+from util.modes import *
 
 def init():
   global vplayer
@@ -8,14 +9,22 @@ def init():
   vplayer = Player(('-fs -fixed-vo'))
   videos = load_video_list("ftp")
 
+def deinit():
+  global vplayer
+  vplayer.quit()
+
 def event(num):
   global videos
   global vplayer
-  vplayer.stop()
-  vid = videos[num % len(videos)]
-  vplayer.fullscreen = True
-  print vid
-  vplayer.loadfile(vid)
+  if (num == 0):
+    print "vid go random mode"
+    go_random_mode()
+  else:
+    vplayer.stop()
+    vid = videos[num % len(videos)]
+    vplayer.fullscreen = True
+    print vid
+    vplayer.loadfile(vid)
 
 def tick():
   global vplayer

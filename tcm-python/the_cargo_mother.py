@@ -24,7 +24,6 @@ def handle_periodic_events():
 set_basedir(os.path.expanduser("~/videos-core"))
 print "load and init mode"
 mode = go_mode_now("videoclips")
-mode.init()
 driver.init()
 last_event_now()
 handle_periodic_events()
@@ -35,6 +34,7 @@ while True:
   if (type(event) == int):
     last_event_now()
     mode.event(event)
+    mode = mode_change_if_queued()
   elif (event == '\x1b' or event == '\x03'):
     exit()
   else:
