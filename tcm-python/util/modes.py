@@ -38,9 +38,9 @@ def mode_change_if_queued():
   global do_mode_change
   global selected_mode 
   global mode
-  print "mode change if needed"
+  #print "mode change if needed"
   if (do_mode_change):
-    print "confirmed - do mode change"
+    #print "confirmed - do mode change"
     mode = go_mode_now(selected_mode)
   return mode
 
@@ -58,6 +58,7 @@ def go_next_mode():
     idx = 0
   selected_mode = modes[idx]
   do_mode_change = True
+  print "selected mode: " + selected_mode
 
 def go_random_mode():
   global selected_mode

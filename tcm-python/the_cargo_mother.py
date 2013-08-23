@@ -1,12 +1,16 @@
 #!/usr/bin/python
 
-import drivers.kbdriver as driver
-#import drivers.serialdriver as driver
-
 from util.main  import *
 from util.media import *
 from util.modes import *
 from util.state import *
+
+from socket import *
+hostname = gethostname()
+if (hostname == 'familiar'):
+  import drivers.kbdriver as driver
+else:
+  import drivers.serialdriver as driver
 
 @setInterval(1)
 def handle_periodic_events():
@@ -17,8 +21,9 @@ def handle_periodic_events():
     except:
       23
   if (since_last_event() > 10):
+    23
     # fire a random event if nothing has happened in the last minute
-    print "idle"
+    #print "idle"
     #mode.event(random.randint(0,50))
 
 set_basedir(os.path.expanduser("~/videos-core"))

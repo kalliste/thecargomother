@@ -7,7 +7,7 @@ def init():
   global vplayer
   global videos
   vplayer = Player(('-fs -fixed-vo'))
-  videos = load_video_list("ftp")
+  videos = load_video_list("videos/joey-usb")
 
 def deinit():
   global vplayer
