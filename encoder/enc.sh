@@ -15,8 +15,7 @@ is_file_exits() {
  
 if ( is_file_exits "$1" )
 then
-  #ffmpeg -i "$1" -r 24 -pix_fmt yuvj420p -vcodec mjpeg -acodec pcm_u8 -vf "scale=iw*min(640/iw\,480/ih):ih*min(640/iw\,480/ih),pad=640:480:(640-iw)/2:(480-ih)/2" -y "$2"
-  ffmpeg -i "$1" -vcodec libtheora -acodec mp2 -vf "scale=iw*min(640/iw\,480/ih):ih*min(640/iw\,480/ih),pad=640:480:(640-iw)/2:(480-ih)/2" -y "$2"
+  ffmpeg -i "$1" -sameq -r 24 -pix_fmt yuvj420p -vcodec mjpeg -acodec pcm_u8 -vf "scale=iw*min(640/iw\,480/ih):ih*min(640/iw\,480/ih),pad=640:480:(640-iw)/2:(480-ih)/2" -y "$2"
 else
  echo "File not found"
 fi
