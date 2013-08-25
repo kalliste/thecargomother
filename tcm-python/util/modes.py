@@ -4,14 +4,14 @@ from util.main import *
 mode = None
 
 def find_modes():
-  static_list = [
-    "espeak",
-    "joeyvids",
-    "peoplesounds",
-    "soundeffects",
-    "videoclips"
-  ]
-  return static_list
+  #static_list = [
+  #  "espeak",
+  #  "joeyvids",
+  #  "peoplesounds",
+  #  "soundeffects",
+  #  "videoclips"
+  #]
+  #return static_list
   ret = list()
   for file in sorted(os.listdir('modes')):
     if (file[-3:] == '.py' and file != '__init__.py'):
