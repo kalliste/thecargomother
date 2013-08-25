@@ -8,6 +8,8 @@ def init():
   global vals
   global old_vals
   global q
+  global exceptions
+  exceptions = 0
   q = Queue.Queue()
   old_vals = vals = ['0'] * 54
   device = ''
@@ -22,13 +24,19 @@ def get_event():
   global vals
   global old_vals
   global q
+  global exceptions
   while (q.qsize() == 0):
-    x = ser.readline()
-    vals = x.strip().split(',')
-    for i in range(0, len(vals)):
-      if (int(vals[i]) == 1 and int(old_vals[i]) == 0):
-        q.put(i)
-    old_vals = vals
+    try:
+      x = ser.readline()
+      vals = x.strip().split(',')
+      for i in range(0, len(vals)):
+        if (int(vals[i]) == 1 and int(old_vals[i]) == 0):
+          q.put(i)
+      old_vals = vals
+    except:
+      exceptions = exceptions + 1
+      if (exceptions > 10):
+        exit()
   if (q.qsize() != 0):
     ret = q.get()
     return ret
