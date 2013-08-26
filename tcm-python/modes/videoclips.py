@@ -8,6 +8,7 @@ def init():
   global videos
   vplayer = Player(('-fs -fixed-vo'))
   videos = load_video_list("regularplay")
+  random.shuffle(videos)
 
 def deinit():
   global vplayer

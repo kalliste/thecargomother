@@ -28,7 +28,7 @@ def handle_periodic_events():
 
 set_basedir(os.path.expanduser("~/videos-core"))
 print "load and init mode"
-mode = go_mode_now("chaos1")
+mode = go_mode_now("videoclips")
 driver.init()
 last_event_now()
 handle_periodic_events()
