@@ -5,6 +5,9 @@ from util.media import *
 from util.modes import *
 from util.state import *
 
+import random
+random.seed()
+
 from socket import *
 hostname = gethostname()
 if (hostname == 'familiar'):
@@ -40,7 +43,7 @@ while True:
     last_event_now()
     mode_event(event)
     print "after event"
-    mode = mode_change_if_queued()
+    #mode = mode_change_if_queued()
   elif (event == '\x1b' or event == '\x03'):
     exit()
   else:

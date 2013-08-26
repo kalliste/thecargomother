@@ -5,11 +5,13 @@ mode = None
 
 def mode_event(event):
   global mode
-  mode.event(event)
+  if (mode != None):
+    mode.event(event)
 
 def mode_tick():
   global mode
-  mode.tick() 
+  if (mode != None):
+    mode.tick() 
 
 def find_modes():
   ret = list()
@@ -59,6 +61,7 @@ def go_next_mode():
     idx = 0
   selected_mode = modes[idx]
   do_mode_change = True
+  go_mode_now()
   print "selected mode: " + selected_mode
 
 def go_random_mode():
@@ -68,5 +71,6 @@ def go_random_mode():
   selected_mode = modes[random.randint(0, len(modes)-1)]
   do_mode_change = True
   print "selected mode: " + selected_mode
+  go_mode_now()
   return selected_mode
 
