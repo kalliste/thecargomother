@@ -17,7 +17,7 @@ def handle_periodic_events():
   global mode
   if (has_method(mode, 'tick')):
     try:
-      mode.tick() 
+      mode_tick() 
     except:
       23
   if (since_last_event() > 10):
@@ -28,7 +28,7 @@ def handle_periodic_events():
 
 set_basedir(os.path.expanduser("~/videos-core"))
 print "load and init mode"
-mode = go_mode_now("hybrid")
+mode = go_mode_now("chaos1")
 driver.init()
 last_event_now()
 handle_periodic_events()
@@ -38,7 +38,8 @@ while True:
   event = driver.get_event()
   if (type(event) == int):
     last_event_now()
-    mode.event(event)
+    mode_event(event)
+    print "after event"
     mode = mode_change_if_queued()
   elif (event == '\x1b' or event == '\x03'):
     exit()

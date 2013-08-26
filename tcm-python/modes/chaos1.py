@@ -17,7 +17,6 @@ def play_vid(which):
   global vplayer
   global videos
   vplayer.stop()
-  print vid
   vplayer.loadfile(videos[which])
 
 def deinit():

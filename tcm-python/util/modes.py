@@ -3,15 +3,15 @@ from util.main import *
 
 mode = None
 
+def mode_event(event):
+  global mode
+  mode.event(event)
+
+def mode_tick():
+  global mode
+  mode.tick() 
+
 def find_modes():
-  #static_list = [
-  #  "espeak",
-  #  "joeyvids",
-  #  "peoplesounds",
-  #  "soundeffects",
-  #  "videoclips"
-  #]
-  #return static_list
   ret = list()
   for file in sorted(os.listdir('modes')):
     if (file[-3:] == '.py' and file != '__init__.py'):
@@ -38,9 +38,10 @@ def mode_change_if_queued():
   global do_mode_change
   global selected_mode 
   global mode
-  #print "mode change if needed"
+  do_mode_change = False
+  print "mode change if needed"
   if (do_mode_change):
-    #print "confirmed - do mode change"
+    print "confirmed - do mode change"
     mode = go_mode_now(selected_mode)
   return mode
 
@@ -67,4 +68,5 @@ def go_random_mode():
   selected_mode = modes[random.randint(0, len(modes)-1)]
   do_mode_change = True
   print "selected mode: " + selected_mode
+  return selected_mode
 

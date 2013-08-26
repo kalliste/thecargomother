@@ -37,3 +37,7 @@ def load_text_set(which):
   for (i, item) in enumerate(lines):
     lines[i] = string.strip(lines[i])
   return lines
+
+def say_phrase(phrase):
+  cmd = 'espeak "' + phrase + '" --stdout | aplay -D plug:dmix -q &'
+  os.system(cmd)

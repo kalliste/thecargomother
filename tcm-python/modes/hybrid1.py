@@ -7,7 +7,7 @@ def init():
   global vplayer
   global videos
   global phrases
-  phrases = load_text_set("set1")
+  phrases = load_text_set("burn1")
   vplayer = Player(('-fs -fixed-vo'))
   videos = load_video_list("shortsilent")
   play_random_vid()
@@ -28,8 +28,7 @@ def deinit():
 def event(num):
   global phrases
   phrase = phrases[num % len(phrases)]
-  cmd = 'espeak "' + phrase + '" --stdout | aplay -D plug:dmix -q &'
-  os.system(cmd)
+  say_phrase(phrase)
 
 def tick():
   global vplayer
