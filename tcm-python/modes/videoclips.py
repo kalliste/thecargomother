@@ -29,6 +29,8 @@ def event(num):
 
 def tick():
   global vplayer
+  if (random.randint(0, 1200) == 23):
+    random.shuffle(videos)
   x = vplayer.stream_pos
   if (vplayer.stream_end == None):
     event(random.randint(0,50))
