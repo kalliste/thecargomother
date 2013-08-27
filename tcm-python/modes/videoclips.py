@@ -17,6 +17,8 @@ def deinit():
 def event(num):
   global videos
   global vplayer
+  if (random.randint(0, 25) == 23):
+    go_random_mode()
   if (num == 0):
     print "vid go random mode"
     go_random_mode()
