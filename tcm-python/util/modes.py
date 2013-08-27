@@ -61,7 +61,7 @@ def go_next_mode():
     idx = 0
   selected_mode = modes[idx]
   do_mode_change = True
-  go_mode_now()
+  go_mode_now(selected_mode)
   print "selected mode: " + selected_mode
 
 def go_random_mode():
@@ -71,6 +71,6 @@ def go_random_mode():
   selected_mode = modes[random.randint(0, len(modes)-1)]
   do_mode_change = True
   print "selected mode: " + selected_mode
-  go_mode_now()
+  go_mode_now(selected_mode)
   return selected_mode
 
